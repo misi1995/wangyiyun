@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<body>
+    <!-- 头部 -->
+    <header class="header" id="header">
+        <!-- 主导航栏 -->
+        <div class="header-in" id="header_in">
+            <div class="logo" id="logo"></div>
+            <div class="top-nav" id="top_nav">
+                <ul>
+                    <li class="current"><a href="" class="cur"><em>发现音乐</em><sub class="nav-current"></sub></a></li>
+                    <li><a href="">我的音乐</a></li>
+                    <li><a href="">朋友</a></li>
+                    <li><a href="">商城</a></li>
+                    <li><a href="">音乐人</a></li>
+                    <li><a href="">下载客户端<sup class="hot"></sup></a></li>
+                </ul>
+            </div>
+            <div class="top-login" id="top_login">
+                <a href="">登录</a>
+                <div class="login-method" id="login_method">
+                    <ul>
+                        <li><a href=""><i></i><em>手机号登录</em></a></li>
+                        <li><a href=""><i></i><em>微信号登录</em></a></li>
+                        <li><a href=""><i></i><em>QQ登录</em></a></li>
+                        <li><a href=""><i></i><em>新浪微博登录</em></a></li>
+                        <li><a href=""><i></i><em>网易邮箱账号登录</em></a></li>
+                    </ul>
+                    <i class="arr"></i>
+
+                </div>
+            </div>
+            <div class="top-video" id="top_video"><a href="">视频投稿</a></div>
+            <div class="top-search" id="top_search">
+                <input type="text" id="search_box" class="search-box" placeholder="音乐/视频/电台/用户">
+            </div>
+        </div>
+    </header>
+
+    <!-- 副导航栏 -->
+    <div class="subnav" id="subnav">
+        <div class="subnav-in" id="subnav-in">
+            <ul>
+                <li><a href="" class="subnav-current"><em>推荐</em></a></li>
+                <li><a href=""><em>排行榜</em></a></li>
+                <li><a href=""><em>歌单</em></a></li>
+                <li><a href=""><em>主播电台</em></a></li>
+                <li><a href=""><em>歌手</em></a></li>
+                <li><a href=""><em>新碟上架</em></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <section class="banner" id="banner">
+        <div class="banner-in" id="banner_in">
+            <div class="banner-img" id="banner_img">
+                <ul>
+                    <li><img src="images/1.jpg" alt=""></li>
+                    <li><img src="images/2.jpg" alt=""></li>
+                    <li><img src="images/3.jpg" alt=""></li>
+                    <li><img src="images/4.jpg" alt=""></li>
+                    <li><img src="images/5.jpg" alt=""></li>
+                    <li><img src="images/6.jpg" alt=""></li>
+                    <li><img src="images/7.jpg" alt=""></li>
+                    <li><img src="images/8.jpg" alt=""></li>
+                </ul>
+                <div class="dots" id="dots">
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                </div>
+            </div>
+            <span class="btn-prev" id="btn_prev"></span>
+            <span class="btn-next" id="btn_next"></span>
+            <div class="download" id="download">
+                <a href="" id="download_btn" class="download-btn"></a>
+                <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容模块 -->
+    <section class="content" id="content">
+        <div class="content-in" id="content_in">
+            <div class="content-left">
+                <!-- 热门推荐 -->
+                <div class="popular">
+                    <div class="popular-head">
+                        <a href="" class="p-title">热门推荐</a>
+                        <div class="tab">
+                            <a href="">华语</a>
+                            <span class="line">|</span>
+                            <a href="">流行</a>
+                            <span class="line">|</span>
+                            <a href="">摇滚</a>
+                            <span class="line">|</span>
+                            <a href="">电子</a>
+                            <span class="line">|</span>
+                            <a href="">民谣</a>
+                        </div>
+                        <div class="more">
+                            <a href="">更多</a>
+                            <span class="more-pic"></span>
+                        </div>
+                    </div>
+                    <div class="popular-content">
+                        <ul>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr1.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr2.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr3.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr4.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr5.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p>
+                                    <a href="">余生，你会有那么一刻想起我一下吧</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr6.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr7.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                            <li>
+                                <div class="popular-cover">
+                                    <img src="images/pr8.jpg" alt="">
+                                    <a href="" class="mask"></a>
+                                    <div class="cover-bottom">
+                                        <span class="cover-icon"></span>
+                                        <span class="num">101万</span>
+                                        <a href="" class="play"></a>
+                                    </div>
+                                </div>
+                                <p><a href="">余生，你会有那么一刻想起我一下吧</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 新碟推荐 -->
+                <div class="newdisc">
+                    <div class="newdisc-head">
+                        <a href="" class="n-title">新碟推荐</a>
+                        <div class="more">
+                            <a href="">更多</a>
+                            <span class="more-pic"></span>
+                        </div>
+                    </div>
+                    <div class="newdisc-content" id="newdisc_content">
+                        <div class="inner" id="inner">
+                            <span class="inner-prev" id="inner_prev"></span>
+                            <div class="roll" id="roll">
+                                <ul class="ul1" id="ul1">
+                                    <li>
+                                        <div class="new-cover">
+                                            <img src="images/n1.jpg" alt="">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n2.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n3.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n4.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n5.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                </ul>
+                                <ul class="ul2 " id="ul2">
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n6.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n7.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n8.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n9.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="new-cover ">
+                                            <img src="images/n10.jpg " alt=" ">
+                                            <a href="" class="msk" id="msk"></a>
+                                            <a href="" class="n-play" id="n_play"></a>
+                                        </div>
+                                        <p><a href="">Origins (Deluxe)</a></p>
+                                        <p><a href="">Imagine Dragons</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="inner-next " id="inner_next"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 榜单 -->
+                <div class="rank" id="rank">
+                    <div class="rank-head">
+                        <a href="" class="r-title">榜单</a>
+                        <div class="more">
+                            <a href="">更多</a>
+                            <span class="more-pic"></span>
+                        </div>
+                    </div>
+                    <div class="rank-content">
+                        <dl class="rank-list">
+                            <dt class="list-top">
+                                <div class="list-logo">
+                                    <img src="images/list1.jpg" alt="">
+                                    <a href="" title="云音乐飙升榜" class="logo-msk"></a>
+                                </div>
+                                <div class="list-title">
+                                    <a href=""><h3>云音乐飙升榜</h3></a>
+                                    <div class="list-btn">
+                                        <a href="" class="list-play"></a>
+                                        <a href="" class="list-collect"></a>
+                                    </div>
+                                </div>
+                            </dt>
+                            <dd class="list-content" id="list_content">
+                                <ol>
+                                    <li>
+                                        <span class="top3">1</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="top3">2</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="top3">3</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="rank-more">
+                                    <a href="">查看全部></a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="rank-list">
+                            <dt class="list-top">
+                                    <div class="list-logo">
+                                        <img src="images/list2.jpg" alt="">
+                                        <a href="" title="云音乐新歌榜" class="logo-msk"></a>
+                                    </div>
+                                    <div class="list-title">
+                                        <a href=""><h3>云音乐新歌榜</h3></a>
+                                        <div class="list-btn">
+                                            <a href="" class="list-play"></a>
+                                            <a href="" class="list-collect"></a>
+                                        </div>
+                                    </div>
+                                </dt>
+                            <dd class="list-content" id="list_content">
+                                <ol>
+                                    <li>
+                                        <span class="top3">1</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="top3">2</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="top3">3</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="rank-more">
+                                    <a href="">查看全部></a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="rank-list">
+                            <dt class="list-top">
+                                        <div class="list-logo">
+                                            <img src="images/list3.jpg" alt="">
+                                            <a href="" title="网易原创歌曲榜" class="logo-msk"></a>
+                                        </div>
+                                        <div class="list-title">
+                                            <a href=""><h3>网易原创歌曲榜</h3></a>
+                                            <div class="list-btn">
+                                                <a href="" class="list-play"></a>
+                                                <a href="" class="list-collect"></a>
+                                            </div>
+                                        </div>
+                                    </dt>
+                            <dd class="list-content" id="list_content">
+                                <ol>
+                                    <li>
+                                        <span class="top3">1</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="top3">2</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="top3">3</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="">It's Always The Little Things</a>
+                                        <div class="opr">
+                                            <a href="" title="播放" class="rank-play"></a>
+                                            <a href="" title="加入播放列表" class="rank-add"></a>
+                                            <a href="" title="收藏" class="rank-collect"></a>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="rank-more">
+                                    <a href="">查看全部></a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right ">
+                <!-- 用户登录 -->
+                <div class="right-login">
+                    <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                    <a href="">用户登录</a>
+                </div>
+                <!-- 歌手 -->
+                <div class="singer">
+                    <h3>
+                        <span>入驻歌手</span>
+                        <a href="">查看更多></a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="pho"><img src="images/singer1.jpg" alt=""></div>
+                                <div class="info">
+                                    <h4>
+                                        <span>张惠妹aMEI</span>
+                                    </h4>
+                                    <p>台湾歌手张惠妹</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pho"><img src="images/singer2.jpg" alt=""></div>
+                                <div class="info">
+                                    <h4>
+                                        <span>FINE乐团</span>
+                                    </h4>
+                                    <p>独立音乐人</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pho"><img src="images/singer3.jpg" alt=""></div>
+                                <div class="info">
+                                    <h4>
+                                        <span>萬曉利</span>
+                                    </h4>
+                                    <p>民谣歌手、中国现代民谣的代表人物之一</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pho"><img src="images/singer4.jpg" alt=""></div>
+                                <div class="info">
+                                    <h4>
+                                        <span>音乐人赵雷</span>
+                                    </h4>
+                                    <p>民谣歌手</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pho"><img src="images/singer5.jpg" alt=""></div>
+                                <div class="info">
+                                    <h4>
+                                        <span>王三波</span>
+                                    </h4>
+                                    <p>音乐人</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="apply">
+                        <a href=""><i>申请成为网易音乐人</i></a>
+                    </div>
+                </div>
+                <div class="dj">
+                    <h3>热门主播</h3>
+                    <ul>
+                        <li>
+                            <a href=""><img src="images/dj1.jpg" alt=""></a>
+                            <div class="djinfo">
+                                <p>
+                                    <a href="">陈立</a>
+                                    <sup></sup>
+                                </p>
+                                <p>心理学家、美食家陈立教授</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/dj1.jpg" alt=""></a>
+                            <div class="djinfo">
+                                <p>
+                                    <a href="">陈立</a>
+                                    <sup></sup>
+                                </p>
+                                <p>心理学家、美食家陈立教授</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/dj1.jpg" alt=""></a>
+                            <div class="djinfo">
+                                <p>
+                                    <a href="">陈立</a>
+                                    <sup></sup>
+                                </p>
+                                <p>心理学家、美食家陈立教授</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/dj1.jpg" alt=""></a>
+                            <div class="djinfo">
+                                <p>
+                                    <a href="">陈立</a>
+                                    <sup></sup>
+                                </p>
+                                <p>心理学家、美食家陈立教授</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/dj1.jpg" alt=""></a>
+                            <div class="djinfo">
+                                <p>
+                                    <a href="">陈立</a>
+                                    <sup></sup>
+                                </p>
+                                <p>心理学家、美食家陈立教授</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-in">
+            <div class="copy">
+                <p class="link">
+                    <a href="//music.163.com/about" target="_blank" class="item s-fc4">关于网易</a><span class="line">|</span>
+                    <a href="//help.mail.163.com/service.html" target="_blank" class="item s-fc4">客户服务</a><span class="line">|</span>
+                    <a href="//music.163.com/html/web2/service.html" target="_blank" class="item s-fc4">服务条款</a><span class="line">|</span>
+                    <a href="//sitemap.163.com/" target="_blank" class="item s-fc4">网站导航</a><span class="line">|</span>
+                    <a id="g_feedback" href="#" class="s-fc4" onclick="nm.x.feedback();return false;" hidefocus="true">意见反馈</a>
+                </p>
+                <p class="right s-fc3">
+                    <span class="sep span">网易公司版权所有©1997-2018</span><span class="span">杭州乐读科技有限公司运营：</span><a href="http://p1.music.126.net/03WF0APmm-J0TqdbOc8-XQ==/109951163649544962.png" target="_blank" class="alink s-fc3">浙网文[2018]3506-263号</a>
+                </p>
+                <p class="contact s-fc3">
+                    <span class="sep span">违法和不良信息举报电话：0571-89853516</span>
+                    <span class="span">举报邮箱：</span><a class="alink" href="mailto:cloudmusicservice@163.com">cloudmusicservice@163.com</a>
+                </p>
+            </div>
+            <ul class="enter">
+                <li class="unit">
+                    <a class="logo logonew logo-musician f-tid" href="//music.163.com/recruit" target="_blank"></a>
+                    <span class="tt tt-musician"></span>
+                </li>
+                <li class="unit">
+                    <a class="logo logonew logo-topic f-tid" href="//music.163.com/topic/recruit" target="_blank"></a>
+                    <span class="tt tt-topic"></span>
+                </li>
+                <li class="unit">
+                    <a class="logo logonew logo-midea f-tid" href="//music.163.com/topic/selfmedia" target="_blank"></a>
+                    <span class="tt tt-midea"></span>
+                </li>
+                <li class="unit">
+                    <a class="logo logonew logo-reward f-tid" href="//music.163.com/web/reward" target="_blank"></a>
+                    <span class="tt tt-reward"></span>
+                </li>
+                <li class="unit">
+                    <a class="logo logonew logo-cash f-tid" href="//music.163.com/uservideo#/plan" target="_blank"></a>
+                    <span class="tt tt-cash"></span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <a href="javascript:;" class="return-top" id="return_top"></a>
+</body>
+
+
+<script src="js/main.js "></script>
+<script src="js/myFunc.js "></script>
+
+</html>
